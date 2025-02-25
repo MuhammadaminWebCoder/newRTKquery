@@ -4,7 +4,6 @@ import { carsApi } from "./carsApi";
 export const store = configureStore({
     reducer:{
         [carsApi.reducerPath]:carsApi.reducer,
-
     },
     middleware:(getDefaultMiddleWare) => getDefaultMiddleWare().concat(carsApi.middleware)
 })
